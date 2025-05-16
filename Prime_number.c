@@ -8,10 +8,11 @@ if(num<=1){
 }
 for(i=2;i<=num/2;i++){
     if(num%2==0){
-        isprime=1;
+        isprime=0;
+        break;
     }
     else{
-        isprime=0;
+        isprime=1;
     }
 }
 if(isprime){
