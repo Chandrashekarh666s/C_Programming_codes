@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+// Function to print transpose of 3x3 matrix
+void printTranspose(int arr[3][3]) {
+    printf("Transpose of the matrix:\n");
+    for(int i = 0; i < 3; i++) {
+        for(int j = 0; j < 3; j++) {
+            printf("%d ", arr[j][i]);
+        }
+        printf("\n");
+    }
+}
+
+int main() {
+    int matrix[3][3];
+
+    printf("Enter 9 elements for 3x3 matrix:\n");
+    for(int i = 0; i < 3; i++){
+        for(int j = 0; j < 3; j++){
+            scanf("%d", &matrix[i][j]);
+        }
+    }
+
+    printTranspose(matrix);
+
+    return 0;
+}
